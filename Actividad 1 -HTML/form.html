@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset-"utf-8">
+	<title>Mi Contacto</title>
+	
+</head>
+
+<body bgcolor="#348A80">
+
+	<ul>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="form.html">Contacto</a></li>		
+		
+	</ul>
+		  
+	<h1>Formulario Contacto</h1>
+	<form action="procesa.html" method="POST">
+		<label for="nombre" hidden >Nombre:</label>
+		<input type="text" name="Nombre" placeholder="Escribe tu nombre">	
+		<br>
+		
+		<label for="correo"> Correo:</label>  
+		<input type="email" name="correo" value=""placeholder="Escribe tu correo"  required><br>
+		
+		<label for="sexo">Sexo:</label>  
+		
+		<input type="radio" name="sexo" value="F">Femenino
+		<input type="radio" name="sexo" value="M" checked>Masculino<br>
+		
+		<label for="boletin">Recibir Boletín:</label>  
+		<br><input type="checkbox" name="boletin" value="1" checked><br>
+		
+		<label for="carrera">Carrera:</label>
+		<select name="carrera">
+		<option value="info">Ing. Informática</option>
+		<option value="comp">Ing. Computación</option><br>
+		<option value="cel">Ing. Electronica</option><br>
+		
+		</select>
+		
+		<br>
+		<label for="psw">Contraseña:</label>
+		<input type="password" name="psw" ><br>
+		
+		<label for="promedio">Promedio:</label>
+		<input type="number" name="promedio" min="60" max="100"><br>
+		
+		<label for="comentario">Comentario:</label><br>
+		<textarea name="comentario col="20" rows="5"></textarea><br><br>
+		
+		<label for="nacimiento">Fecha de Nacimiento:</label>
+		<input type="date" name="nacimiento"><br><br>
+		<input type="hidden" name="escondido" value="marselo">
+		
+		<br>
+		<button type="submit">Enviar</button>
+		<input type="submit" value="Enviar con input">
+		<input type="reset" value="Limpiar">
+		
+		</form>		
+	
+		
+</body>
+</html>
